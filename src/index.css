@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f4ef;
+  --surface: #fffdfb;
+
+  --primary: #d8c4af;
+  --secondary: #d7b4ba;
+  --accent: #bfcbb5;
+
+  --text: #4a4642;
+  --text-light: #6d6762;
+
+  --border: #e7ddd7;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  --transition-fast: 0.2s;
+  --transition-normal: 0.4s;
+  --transition-slow: 0.8s;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  user-select: none;
+}
+
+.section-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
